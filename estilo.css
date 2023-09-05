@@ -1,0 +1,122 @@
+
+html, body{
+    background-color: rgb(255, 217, 0);
+    margin: 0;
+}
+#header {
+    background-color: rgb(177, 29, 29);
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 96px;
+    position: absolute;
+    top: 10px;
+    margin-left: 5%;
+}
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 0px;
+}
+li {
+    float: left;
+    padding: 10 20 10 20;
+    border: 1px solid red;
+}
+li:hover{
+    background-color: rgb(255, 217, 0);
+}
+
+#imagem_fundo {
+    background: url("Fundo.jpeg");
+    background-size: cover;
+    padding: auto;
+    text-align: center;
+}
+#titulo{
+    color: white;
+    padding-top: 30%;
+    font-size: 60px;
+}
+#subtitulo {
+    margin-right: 20%;
+    border-top: 3px solid white;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 40px;
+    text-shadow: 1px 1px;
+}
+#acao {
+    color: white;
+    border: green;
+    padding: 10px 20px 10px 20px;
+}
+.ícone {
+    width: 50px;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    float: left;
+}
+
+.imgvida {
+    width: 30%;
+}
+
+.coluna {
+    float: left;
+    padding: 05%;
+    position: relative;
+    width: 40%;
+}
+
+.dois {
+    width: 40%;
+}
+.quatro {
+    float: left;
+    padding: 05%;
+    position: relative;
+    width: 15%;
+}
+.justificado {
+    text-align: justify;
+}
+.centralizado {
+    text-align: center;
+}
+footer {
+    background-color: rgb(255, 217, 0);
+    float: left;
+    width: 100%;
+    height: 30%;
+    color: rgb(114, 8, 8);
+}
+@media all and (max-width: 760px) {
+    #menu{
+        visibility: hidden;
+    }.coluna, .dois, .tres, .quatro{
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+    #logodiv {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+    #logo {
+        margin: 0px;
+        transform: translate(-50%);
+    }
+
+}
